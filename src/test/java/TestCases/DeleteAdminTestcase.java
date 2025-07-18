@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class DeleteAdminTestcase extends BaseTest {
@@ -33,7 +34,7 @@ public class DeleteAdminTestcase extends BaseTest {
 
         adminPage.searchByUsername("Admin");
 
-        Map<String, String> searchResultData =adminPage.getResults();
+        HashMap searchResultData =adminPage.getResults();
 
         System.out.println("Verifying search results...");
 
